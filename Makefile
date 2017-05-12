@@ -22,7 +22,7 @@ distclean: clean
 	rm -f $(SOBJ)
 
 install-me:
-	swipl -f none -g "pack_install(.,[upgrade(true)]), halt"
+	swipl -f none -g "pack_install('file:.',[upgrade(true)]), halt"
 
 publish:
 	swipl -f none -g "pack_property(plosc,download(D)), pack_install(D,[upgrade(true),interactive(false)]), halt"
