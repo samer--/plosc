@@ -91,7 +91,7 @@ osc_send_from(Srv,Targ,Path,Args,Time) :- T1 is Time, osc_send_from_at(Srv,Targ,
 
 %% osc_now(-TS:osc_timestamp) is det.
 %
-%  Gets the current OSC time in seconds and 1/2^64 ths of second.
+%  Gets the current OSC time as an OSC timestamp term.
 osc_now(osc_ts(Secs,Fracs)) :- osc_now(Secs,Fracs).
 
 %% osc_time_ts(+Time:float,-TS:osc_timestamp) is det.
