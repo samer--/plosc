@@ -2,7 +2,7 @@
 OSC client and server for SWI Prolog
 
 
-This module allows Prolog code to send Open Sound Control (OSC)
+This module allows Prolog code to send and receive Open Sound Control (OSC)
 messages using liblo.
 
 
